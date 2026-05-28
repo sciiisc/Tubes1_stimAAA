@@ -1,7 +1,6 @@
-markdown
-Robocode Tank Royale
 
-Tugas Besar Strategi Algoritma - Kelompok [Nama Kelompok Kalian]
+
+Tugas Besar Strategi Algoritma - Kelompok stimAAA
 
 ---
 
