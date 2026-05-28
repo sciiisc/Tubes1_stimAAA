@@ -1,0 +1,16 @@
+{
+  "name": "Sally",
+  "version": "1.0",
+  "authors": [
+    "Suci Marwah Anissa (124140161)",
+    "Reza Lesmana (124140115)",
+    "M Faza Prasetyo (124140204)"
+  ],
+  "description": "Bot dengan algoritma Greedy - 5 mode strategi adaptif",
+  "homepage": "",
+  "countryCodes": [
+    "id"
+  ],
+  "platform": ".NET 10.0",
+  "programmingLang": "C#"
+}
