@@ -1,28 +1,44 @@
+markdown
+Robocode Tank Royale
+
 Tugas Besar Strategi Algoritma - Kelompok [Nama Kelompok Kalian]
 
-📌 Algoritma Greedy yang Dipakai
-Bot yang kami buat menggunakan algoritma greedy, yaitu strategi di mana bot selalu mengambil keputusan terbaik berdasarkan kondisi saat itu tanpa memikirkan masa depan.
+---
 
-Kami membuat 4 bot dengan strategi greedy yang berbeda:
+## 📌 Algoritma Greedy yang Dipakai
 
-Bot	Strategi	Heuristic
-Sally	Hybrid 5 mode	Adaptif sesuai kondisi (darurat, banyak musuh, sniper, ramming, normal)
-Rusher	Ramming	Kejar musuh terdekat, tabrak & tembak power besar
-Sour	Sniper	Jaga jarak, tembak akurat dari jauh
-Kicau	Survival	Prioritaskan bertahan hidup, kabur saat bahaya
-Bot utama kami adalah Sally karena paling seimbang. Dia punya 5 mode strategi yang otomatis berubah tergantung situasi:
+Bot yang kami buat menggunakan **algoritma greedy**, yaitu strategi di mana bot selalu mengambil keputusan terbaik berdasarkan kondisi saat itu tanpa memikirkan masa depan.
 
-Mode Darurat (energi < 35) → kabur
-Mode Banyak Musuh (lawan ≥ 2) → menjauh dari keramaian
-Mode Sniper (jarak > 220) → jaga jarak, tembak akurat
-Mode Ramming (jarak < 65 & energi lebih) → tabrak & tembak besar
-Mode Normal (sisa kondisi) → zigzag standar
-Yang Dibutuhkan
-.NET SDK (10.0 atau 6.0)
-Java (buat jalanin servernya)
-Robocode Tank Royale Engine (dari starter pack atau download sendiri)
-Cara Jalanin
-Buka Server Dulu
+Kami membuat **4 bot** dengan strategi greedy yang berbeda:
+
+| Bot | Strategi | Heuristic |
+|-----|----------|-----------|
+| **Sally** | Hybrid 5 mode | Adaptif sesuai kondisi (darurat, banyak musuh, sniper, ramming, normal) |
+| **Rusher** | Ramming | Kejar musuh terdekat, tabrak & tembak power besar |
+| **Sour** | Sniper | Jaga jarak, tembak akurat dari jauh |
+| **Kicau** | Survival | Prioritaskan bertahan hidup, kabur saat bahaya |
+
+Bot utama kami adalah **Sally** karena paling seimbang. Dia punya 5 mode strategi yang otomatis berubah tergantung situasi:
+- **Mode Darurat** (energi < 35) → kabur
+- **Mode Banyak Musuh** (lawan ≥ 2) → menjauh dari keramaian
+- **Mode Sniper** (jarak > 220) → jaga jarak, tembak akurat
+- **Mode Ramming** (jarak < 65 & energi lebih) → tabrak & tembak besar
+- **Mode Normal** (sisa kondisi) → zigzag standar
+
+---
+
+## Yang Dibutuhkan
+
+- .NET SDK (10.0 atau 6.0)
+- Java (buat jalanin servernya)
+- Robocode Tank Royale Engine (dari starter pack atau download sendiri)
+
+---
+
+## Cara Jalanin
+
+1. Buka Server Dulu
+```bash
 cd tank-royale-0.30.0
 java -jar robocode-tankroyale-gui-0.30.0.jar
 
@@ -85,4 +101,4 @@ $env:SERVER_SECRET = ""
 dotnet run
 Jangan lupa build ulang kalo ada perubahan kode.
 
-Udah itu aja. Selamat bertempur
+Udah itu aja. Selamat bertempur! 🎯
